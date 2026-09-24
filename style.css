@@ -122,3 +122,8 @@ footer { border-top: 1px solid var(--line); margin-top: 34px; padding: 30px 0 42
   .navbar { align-items: flex-start; padding: 14px 0; flex-direction: column; }
   .hero { padding-top: 36px; }
 }
+
+.study-visual{margin-top:18px}
+.study-visual .figure-card{margin-top:14px}
+.passive-figure img{width:100%;height:auto;display:block;background:#fff}
+.study-visual>p{max-width:900px}
