@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sara Bakhtiari | One-Page Résumé</title>
+<style>
+:root{--ink:#222;--muted:#555;--blue:#1f4e79;--line:#b7c5d2;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.25}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:10px;padding:12px;background:rgba(246,248,251,.95);border-bottom:1px solid #dce3ea}
+.toolbar a,.toolbar button{font:700 14px Arial;border:1px solid var(--blue);border-radius:8px;padding:9px 12px;background:#fff;color:var(--blue);text-decoration:none;cursor:pointer}
+.toolbar button{background:var(--blue);color:#fff}
+.resume{width:min(8.5in,calc(100% - 24px));margin:22px auto;background:#fff;padding:.42in .5in;box-shadow:0 12px 35px rgba(20,35,50,.08)}
+header{text-align:center}
+h1{font-size:26px;line-height:1;margin:0 0 6px;color:var(--blue);letter-spacing:.02em}
+.subtitle{font-size:15px;font-weight:700;margin:0 0 5px}
+.contact,.auth{font-size:14px;color:var(--muted);margin:0}
+.auth{color:var(--blue);font-weight:700;margin-top:4px}
+h2{font-size:16px;color:var(--blue);margin:10px 0 5px;padding-bottom:2px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;margin:5px 0 1px}
+p,li{font-size:14px;margin-top:3px;margin-bottom:3px}
+ul{margin:3px 0 5px;padding-left:20px}
+li{margin-bottom:3px}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.row strong:first-child{min-width:0}
+.date{white-space:nowrap;color:var(--muted);font-weight:700}
+.meta{color:var(--muted);font-style:italic;margin-top:0}
+.label{font-weight:700}
+.page2{page-break-before:always}
+a{color:var(--blue)}
+@media(max-width:650px){
+ .resume{width:100%;margin:0;padding:20px 16px;box-shadow:none}
+ .toolbar{position:static;flex-wrap:wrap}
+ .row{display:block}
+ .date{display:block;margin-top:2px}
+ h1{font-size:24px}
+}
+@media print{
+ @page{size:Letter;margin:.23in .28in}
+ body{background:#fff;line-height:1.0}
+ .toolbar{display:none}
+ .resume{width:auto;margin:0;padding:0;box-shadow:none}
+ h1{font-size:18pt}
+ .subtitle,.contact,.auth,p,li,h3{font-size:12pt}
+ h2{font-size:13pt;margin:3pt 0 2pt}
+ p,li{margin-top:0;margin-bottom:0}
+ ul{margin:0 0 2pt;padding-left:15pt}
+ .subtitle{margin-bottom:0}
+ .contact,.auth{margin:0}
+ .resume{font-size:12pt}
+ .page2{page-break-before:auto}
+}
+</style>
+</head>
+<body>
+<div class="toolbar"><a href="index.html#resume">← Website</a><button onclick="window.print()">Print / Save PDF</button></div>
+<article class="resume">
+<header>
+<h1>Sara Bakhtiari</h1>
+<p class="subtitle">PhD Candidate in Mechanical Engineering | Computational Mechanics | Scientific Computing | Machine Learning & AI</p>
+<p class="contact">Lexington, KY | <a href="mailto:Sara.b@uky.edu">Sara.b@uky.edu</a> | <a href="https://www.linkedin.com/in/sarah-bakhtiyari">LinkedIn</a> | <a href="https://github.com/Sarab23y">GitHub</a> | <a href="https://sarab23y.github.io">Website</a></p>
+<p class="auth">Eligible for U.S. internships through F-1 Curricular Practical Training (CPT), subject to university authorization.</p>
+</header>
+
+<h2>Professional Summary</h2>
+<p>Mechanical Engineering PhD Candidate (GPA 3.91/4.00) developing nonlinear finite-element and multiphysics models for cardiovascular mechanics, with experience in Python, HPC, validation, data analysis, and AI/ML for engineering research.</p>
+<h2>Technical Skills</h2>
+<p><span class="label">Programming & Scientific Computing:</span> Python, MATLAB, NumPy, SciPy, Pandas, FEniCS/DOLFIN, UFL</p>
+<p><span class="label">Machine Learning & AI:</span> scikit-learn, vision-language models, embeddings, regression, cross-validation, feature selection, dimensionality reduction</p>
+<p><span class="label">Computational Mechanics & HPC:</span> Nonlinear FEA, continuum mechanics, constitutive modeling, MPI/mpi4py, PETSc, SLURM, Linux, Singularity</p>
+<p><span class="label">Visualization & Engineering:</span> ParaView, Matplotlib, COMSOL Multiphysics, SolidWorks, HDF5/XDMF</p>
+<h2>Education</h2>
+<p><strong>PhD, Mechanical Engineering (Direct PhD) - University of Kentucky | Spring 2024-Present</strong><br>Candidate since Apr 2026 | GPA 3.91/4.00 | Advisor: Jonathan F. Wenk, PhD</p>
+<p><strong>B.Sc., Mechanical Engineering - Iran University of Science & Technology (IUST) | 2016-2021</strong></p>
+<h2>Research Experience</h2>
+<div class="row"><h3>Graduate Research Assistant - Computational Cardiac Mechanics</h3><span class="date">Spring 2024-Present</span></div>
+<p class="meta">University of Kentucky - Lexington, KY</p>
+<ul>
+<li>Develop and extend MyoFE_H, a coupled finite-element framework integrating ventricular mechanics, passive constitutive laws, half-sarcomere kinetics, active contraction, circulation, growth/remodeling, and fibrosis.</li>
+<li>Evaluate Guccione and Holzapfel-Ogden formulations; quantify effects of material behavior and fiber disarray on stress, deformation, pressure-volume function, efficiency, energetics, and remodeling predictions.</li>
+<li>Run and validate Python/FEniCS simulations using MPI, PETSc, SLURM, and Linux; build workflows for biaxial/shear tests, passive inflation, stress/strain analysis, PV loops, and ParaView post-processing.</li>
+</ul>
+<div class="row"><h3>Machine Learning & Vision-Language Models for Electrospinning</h3><span class="date">2026</span></div>
+<ul><li>Apply pretrained/fine-tuned VLMs and scikit-learn workflows to video embeddings; evaluate feature variability, learned bottlenecks, regression performance, repeatability, and cross-validation for fiber-diameter prediction.</li></ul>
+<h2>Teaching Experience</h2>
+<div class="row"><h3>Teaching Assistant - Statics, University of Kentucky</h3><span class="date">Fall 2026</span></div>
+<ul>
+<li>Explain equilibrium, free-body diagrams, force/moment analysis, trusses, frames, and engineering problem-solving methods to undergraduate students.</li>
+<li>Support classroom instruction and student engagement; assist with grading and exam supervision while evaluating solution approaches and communicating technical concepts clearly.</li>
+</ul>
+<div class="row"><h3>Teaching Assistant - Statics, Iran University of Science and Technology</h3><span class="date">2021</span></div>
+<h2>Selected Publications & Research Outputs</h2>
+<p>Peer-reviewed: Islam, R., Bakhtiari, S., et al. “Advancements in finite element modeling of myocardial infarction: a review.” <em>Biomechanics and Modeling in Mechanobiology</em>, 25(4), 2026. DOI: 10.1007/s10237-026-02107-0</p>
+<p>Two first-author manuscripts under review (passive constitutive laws; fiber disarray/efficiency/baroreflex). BMES Annual Meeting poster, San Diego, 2025.</p>
+</article>
+</body></html>
