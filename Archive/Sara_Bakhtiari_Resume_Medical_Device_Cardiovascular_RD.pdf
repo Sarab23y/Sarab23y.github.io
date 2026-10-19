@@ -18,87 +18,87 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R >>
 endobj
 7 0 obj
-<< /Length 4368 >>
+<< /Length 9010 >>
 stream
 BT /F2 19 Tf 0.12 0.31 0.47 rg 190 760 Td (SARA BAKHTIARI) Tj ET
-BT /F2 9.6 Tf 0.13 0.13 0.13 rg 65 740 Td (PhD Candidate in Mechanical Engineering | Cardiovascular Biomechanics | Medical Device R&D | Finite Element Modeling) Tj ET
-BT /F1 8.4 Tf 0.33 0.35 0.37 rg 104 726 Td (Lexington, KY | Sara.b@uky.edu | LinkedIn | GitHub: Sarab23y | sarab23y.github.io) Tj ET
-BT /F2 8.4 Tf 0.12 0.31 0.47 rg 66 713 Td (Eligible for U.S. internships through F-1 Curricular Practical Training \(CPT\), subject to university authorization.) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 695 Td (PROFESSIONAL SUMMARY) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 692 m 572 692 l S
-BT /F1 9.2 Tf 0.13 0.13 0.13 rg 40 679 Td (PhD candidate in Mechanical Engineering at the University of Kentucky focused on cardiovascular biomechanics) Tj ET
-BT /F1 9.2 Tf 0.13 0.13 0.13 rg 40 668 Td (  and computational modeling. Research spans myocardial constitutive behavior, ventricular mechanics, fiber) Tj ET
-BT /F1 9.2 Tf 0.13 0.13 0.13 rg 40 657 Td (  architecture, efficiency, growth/remodeling, and fibrosis, with experience in finite-element analysis,) Tj ET
-BT /F1 9.2 Tf 0.13 0.13 0.13 rg 40 646 Td (  validation, pressure-volume analysis, Python-based data analysis, and engineering R&D workflows.) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 632 Td (EDUCATION) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 629 m 572 629 l S
-BT /F2 9.2 Tf 0.13 0.13 0.13 rg 40 616 Td (PhD, Mechanical Engineering \(Direct PhD\) - University of Kentucky | Spring 2024-Present) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 605 Td (Candidate since Apr 2026 | GPA 3.91/4.00 | Advisor: Jonathan F. Wenk, PhD) Tj ET
-BT /F2 9.2 Tf 0.13 0.13 0.13 rg 40 595 Td (B.Sc., Mechanical Engineering - Iran University of Science and Technology \(IUST\) | 2016-2021) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 581 Td (RESEARCH EXPERIENCE) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 578 m 572 578 l S
-BT /F2 9.2 Tf 0.13 0.13 0.13 rg 40 565 Td (Graduate Research Assistant - Computational Cardiac Mechanics | Spring 2024-Present) Tj ET
-BT /F1 8.7 Tf 0.33 0.35 0.37 rg 40 554 Td (University of Kentucky - Lexington, KY) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 544 Td (- Develop and extend a coupled left-ventricular simulation framework integrating passive myocardial) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 533.9 Td (  mechanics, active contraction, half-sarcomere kinetics, and cardiovascular circulation.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 523.8 Td (- Compare nonlinear anisotropic myocardial constitutive formulations to determine how material-law choice) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 513.6999999999999 Td (  changes ventricular deformation, stress, pressure-volume behavior, and remodeling predictions.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 503.5999999999999 Td (- Develop material-validation workflows using biaxial, shear, and passive-inflation simulations to assess) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 493.4999999999999 Td (  soft-tissue constitutive behavior before organ-level studies.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 483.39999999999986 Td (- Investigate myocardial fiber disarray and quantify changes in pump function, mechanical efficiency,) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 473.29999999999984 Td (  ATP-related energetics, and baroreflex compensation.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 463.1999999999998 Td (- Develop an agent-based fibrosis model coupled with finite-element cardiac mechanics and analyze) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 453.0999999999998 Td (  pressure-volume loops, stress/strain distributions, fiber architecture, and spatial outputs using Python) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 442.9999999999998 Td (  and ParaView.) Tj ET
-BT /F2 9.2 Tf 0.13 0.13 0.13 rg 40 430.89999999999975 Td (Machine Learning & Vision-Language Models for Electrospinning | 2026) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 419.89999999999975 Td (- Apply vision-language models and regression methods to electrospinning video data for prediction of fiber) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 409.7999999999997 Td (  morphology.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 399.6999999999997 Td (- Build repeatability and cross-validation workflows to evaluate robustness of model-derived features and) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 45 389.5999999999997 Td (  predictions.) Tj ET
+BT /F2 9.4 Tf 0.13 0.13 0.13 rg 64 740 Td (PhD Candidate in Mechanical Engineering | Cardiovascular Biomechanics | Medical Device R&D | Finite Element Modeling) Tj ET
+BT /F1 8.3 Tf 0.33 0.35 0.37 rg 104 726 Td (Lexington, KY | Sara.b@uky.edu | LinkedIn | GitHub: Sarab23y | sarab23y.github.io) Tj ET
+BT /F2 8.3 Tf 0.12 0.31 0.47 rg 66 713 Td (Eligible for U.S. internships through F-1 Curricular Practical Training \(CPT\), subject to university authorization.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 695 Td (PROFESSIONAL SUMMARY) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 692 m 572 692 l S
+BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 679 Td (PhD candidate in Mechanical Engineering at the University of Kentucky focused on cardiovascular biomechanics) Tj ET
+BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 669 Td (and computational modeling. Research spans myocardial constitutive behavior, ventricular mechanics, fiber) Tj ET
+BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 659 Td (architecture, efficiency, growth/remodeling, and fibrosis, with experience in finite-element analysis,) Tj ET
+BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 649 Td (validation, pressure-volume analysis, Python-based data analysis, and engineering R&D workflows.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 637 Td (EDUCATION) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 634 m 572 634 l S
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 621 Td (PhD, Mechanical Engineering \(Direct PhD\) - University of Kentucky | Spring 2024-Present) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 611 Td (Candidate since Apr 2026 | GPA 3.91/4.00 | Advisor: Jonathan F. Wenk, PhD) Tj ET
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 601.2 Td (B.Sc., Mechanical Engineering - Iran University of Science and Technology \(IUST\) | 2016-2021) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 589.2 Td (RESEARCH EXPERIENCE) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 586.2 m 572 586.2 l S
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 573.2 Td (Graduate Research Assistant - Computational Cardiac Mechanics | Spring 2024-Present) Tj ET
+BT /F1 8.5 Tf 0.33 0.35 0.37 rg 40 563.2 Td (University of Kentucky - Lexington, KY) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 553.6 Td (- Develop and extend a coupled left-ventricular simulation framework integrating passive myocardial mechanics,) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 543.9 Td (  active contraction, half-sarcomere kinetics, and cardiovascular circulation.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 534.1999999999999 Td (- Compare nonlinear anisotropic myocardial constitutive formulations to determine how material-law choice) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 524.4999999999999 Td (  changes ventricular deformation, stress, pressure-volume behavior, and remodeling predictions.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 514.7999999999998 Td (- Develop material-validation workflows using biaxial, shear, and passive-inflation simulations to assess) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 505.09999999999985 Td (  soft-tissue constitutive behavior before organ-level studies.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 495.39999999999986 Td (- Investigate myocardial fiber disarray and quantify changes in pump function, mechanical efficiency,) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 485.6999999999999 Td (  ATP-related energetics, and baroreflex compensation.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 475.9999999999999 Td (- Develop an agent-based fibrosis model coupled with finite-element cardiac mechanics and analyze) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 466.2999999999999 Td (  pressure-volume loops, stress/strain distributions, fiber architecture, and spatial outputs using Python and) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 456.5999999999999 Td (  ParaView.) Tj ET
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 446.8999999999999 Td (Machine Learning & Vision-Language Models for Electrospinning | 2026) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 435.8999999999999 Td (- Apply vision-language models and regression methods to electrospinning video data for prediction of fiber) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 426.19999999999993 Td (  morphology.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 416.49999999999994 Td (- Build repeatability and cross-validation workflows to evaluate robustness of model-derived features and) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 45 406.79999999999995 Td (  predictions.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 397.09999999999997 Td (SELECTED RESEARCH PROJECTS) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 394.09999999999997 m 572 394.09999999999997 l S
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 381.09999999999997 Td (Passive Material & Organ-Level Validation: Use biaxial, shear, passive-inflation, stress/strain, and) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 371.29999999999995 Td (pressure-volume analyses to validate soft-tissue behavior before disease and remodeling studies.) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 360.49999999999994 Td (Fiber Architecture & Pump Function: Quantify how myocardial fiber disarray alters pump function, mechanical) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 350.69999999999993 Td (efficiency, ATP-related energetics, and physiological compensation.) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 339.8999999999999 Td (Fibrosis & Tissue Adaptation: Develop a coupled agent-based/finite-element model to study how spatial fibrosis) Tj ET
+BT /F1 8.6 Tf 0.13 0.13 0.13 rg 40 330.0999999999999 Td (changes myocardial mechanics and ventricular function.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 319.2999999999999 Td (PUBLICATIONS & RESEARCH OUTPUTS) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 316.2999999999999 m 572 316.2999999999999 l S
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 303.2999999999999 Td (Islam, R., Bakhtiari, S., Anugrah, G. G., Mehri, M., & Wenk, J. F. "Advancements in finite element modeling of) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 293.5999999999999 Td (myocardial infarction: a review." Biomechanics and Modeling in Mechanobiology, 25\(4\), 2026. DOI:) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 283.8999999999999 Td (10.1007/s10237-026-02107-0) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 273.19999999999993 Td (Bakhtiari, S., Mehri, M., & Wenk, J. F. "Choice of Passive Myocardial Constitutive Law Drives Divergent) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 263.49999999999994 Td (Predictions of Left Ventricular Remodeling in Volume-Overload Conditions." Manuscript under review.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 252.79999999999995 Td (Bakhtiari, S., Mehri, M., & Wenk, J. F. "Effect of Myocardial Fiber Disarray on Left Ventricular Mechanical) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 243.09999999999997 Td (Efficiency and Baroreflex Compensation." Manuscript under review.) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 232.39999999999998 Td (Selected presentation: "Choice of Passive Myocardial Constitutive Law Drives Differences in LV Mechanics and) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 222.7 Td (Growth Under Disease Conditions." Poster, BMES Annual Meeting, San Diego, CA, October 2025.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 212 Td (TEACHING EXPERIENCE) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 209 m 572 209 l S
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 196 Td (Teaching Assistant - Statics, University of Kentucky | Fall 2026) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 186 Td (- Solved and explained undergraduate statics problems involving equilibrium equations, free-body diagrams,) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 176.4 Td (  force/moment analysis, trusses, frames, and systematic engineering problem-solving methods.) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 166.8 Td (- Supported classroom instruction, student questions, engagement, and class management; communicated technical) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 157.20000000000002 Td (  concepts to students with different levels of understanding.) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 147.60000000000002 Td (- Assisted with grading and examination supervision, evaluating engineering solution approaches and maintaining) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 138.00000000000003 Td (  consistent exam procedures.) Tj ET
+BT /F2 8.8 Tf 0.13 0.13 0.13 rg 40 128.40000000000003 Td (Teaching Assistant - Statics, Iran University of Science and Technology | 2021) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 118.40000000000003 Td (- Supported undergraduate engineering-mechanics problem solving and helped students strengthen core statics) Tj ET
+BT /F1 8.5 Tf 0.13 0.13 0.13 rg 45 108.80000000000004 Td (  concepts.) Tj ET
+BT /F2 11.3 Tf 0.12 0.31 0.47 rg 40 99.20000000000005 Td (TECHNICAL SKILLS) Tj ET
+0.66 0.73 0.80 RG 0.55 w 40 96.20000000000005 m 572 96.20000000000005 l S
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 83.20000000000005 Td (Biomechanics & R&D: Cardiovascular mechanics, soft-tissue mechanics, anisotropic constitutive modeling,) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 73.50000000000004 Td (myocardial fiber architecture, fibrosis, growth/remodeling) Tj ET
 endstream
 endobj
 8 0 obj
-<< /Length 5157 >>
+<< /Length 550 >>
 stream
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 752 Td (SELECTED RESEARCH PROJECTS) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 749 m 572 749 l S
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 736 Td (Passive Material & Organ-Level Validation: Use biaxial, shear, passive-inflation, stress/strain, and) Tj ET
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 725.6 Td (  pressure-volume analyses to validate soft-tissue behavior before disease and remodeling studies.) Tj ET
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 714.2 Td (Fiber Architecture & Pump Function: Quantify how myocardial fiber disarray alters pump function, mechanical) Tj ET
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 703.8000000000001 Td (  efficiency, ATP-related energetics, and physiological compensation.) Tj ET
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 692.4000000000001 Td (Fibrosis & Tissue Adaptation: Develop a coupled agent-based/finite-element model to study how spatial) Tj ET
-BT /F1 8.9 Tf 0.13 0.13 0.13 rg 40 682.0000000000001 Td (  fibrosis changes myocardial mechanics and ventricular function.) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 668.6000000000001 Td (PUBLICATIONS & RESEARCH OUTPUTS) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 665.6000000000001 m 572 665.6000000000001 l S
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 652.6000000000001 Td (Islam, R., Bakhtiari, S., Anugrah, G. G., Mehri, M., & Wenk, J. F. "Advancements in finite element modeling) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 642.4000000000001 Td (  of myocardial infarction: a review." Biomechanics and Modeling in Mechanobiology, 25\(4\), 2026. DOI:) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 632.2 Td (  10.1007/s10237-026-02107-0) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 620 Td (Bakhtiari, S., Mehri, M., & Wenk, J. F. "Choice of Passive Myocardial Constitutive Law Drives Divergent) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 609.8 Td (  Predictions of Left Ventricular Remodeling in Volume-Overload Conditions." Manuscript under review.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 597.5999999999999 Td (Bakhtiari, S., Mehri, M., & Wenk, J. F. "Effect of Myocardial Fiber Disarray on Left Ventricular Mechanical) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 587.3999999999999 Td (  Efficiency and Baroreflex Compensation." Manuscript under review.) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 575.1999999999998 Td (Selected presentation: "Choice of Passive Myocardial Constitutive Law Drives Differences in LV Mechanics and) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 564.9999999999998 Td (  Growth Under Disease Conditions." Poster, BMES Annual Meeting, San Diego, CA, October 2025.) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 552.7999999999997 Td (TEACHING EXPERIENCE) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 549.7999999999997 m 572 549.7999999999997 l S
-BT /F2 9.1 Tf 0.13 0.13 0.13 rg 40 536.7999999999997 Td (Teaching Assistant - Statics, University of Kentucky | Fall 2026) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 526.2999999999997 Td (- Solved and explained undergraduate statics problems involving equilibrium equations, free-body diagrams,) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 516.3999999999997 Td (  force/moment analysis, trusses, frames, and systematic engineering problem-solving methods.) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 506.4999999999998 Td (- Supported classroom instruction, student questions, engagement, and class management; communicated) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 496.5999999999998 Td (  technical concepts to students with different levels of understanding.) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 486.6999999999998 Td (- Assisted with grading and examination supervision, evaluating engineering solution approaches and) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 476.79999999999984 Td (  maintaining consistent exam procedures.) Tj ET
-BT /F2 9.1 Tf 0.13 0.13 0.13 rg 40 466.89999999999986 Td (Teaching Assistant - Statics, Iran University of Science and Technology | 2021) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 456.39999999999986 Td (- Supported undergraduate engineering-mechanics problem solving and helped students strengthen core statics) Tj ET
-BT /F1 8.7 Tf 0.13 0.13 0.13 rg 45 446.4999999999999 Td (  concepts.) Tj ET
-BT /F2 11.5 Tf 0.12 0.31 0.47 rg 40 434.5999999999999 Td (TECHNICAL SKILLS) Tj ET
-0.66 0.73 0.80 RG 0.6 w 40 431.5999999999999 m 572 431.5999999999999 l S
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 418.5999999999999 Td (Biomechanics & R&D: Cardiovascular mechanics, soft-tissue mechanics, anisotropic constitutive modeling,) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 408.3999999999999 Td (  myocardial fiber architecture, fibrosis, growth/remodeling) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 398.19999999999993 Td (Simulation & Validation: Nonlinear FEA, FEniCS/DOLFIN, material validation, biaxial/shear testing, passive) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 387.99999999999994 Td (  inflation, pressure-volume analysis) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 377.79999999999995 Td (Programming & Analysis: Python, MATLAB, NumPy, SciPy, Pandas, UFL) Tj ET
-BT /F1 8.8 Tf 0.13 0.13 0.13 rg 40 367.59999999999997 Td (Engineering Software: COMSOL Multiphysics, SolidWorks, ParaView, Matplotlib; MPI/PETSc/SLURM HPC workflows) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 752 Td (Simulation & Validation: Nonlinear FEA, FEniCS/DOLFIN, material validation, biaxial/shear testing, passive) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 742.3 Td (inflation, pressure-volume analysis) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 732.5999999999999 Td (Programming & Analysis: Python, MATLAB, NumPy, SciPy, Pandas, UFL) Tj ET
+BT /F1 8.55 Tf 0.13 0.13 0.13 rg 40 722.8999999999999 Td (Engineering Software: COMSOL Multiphysics, SolidWorks, ParaView, Matplotlib; MPI/PETSc/SLURM HPC workflows) Tj ET
 endstream
 endobj
 xref
@@ -111,9 +111,9 @@ xref
 0000000266 00000 n 
 0000000402 00000 n 
 0000000538 00000 n 
-0000004957 00000 n 
+0000009599 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-10165
+10199
 %%EOF
