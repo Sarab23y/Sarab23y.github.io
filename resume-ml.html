@@ -3,54 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sara Bakhtiari | Scientific ML & AI Résumé</title>
-<link rel="stylesheet" href="assets/style.css">
+<title>Sara Bakhtiari | Scientific ML & AI CV</title>
+<style>
+:root{--ink:#222;--muted:#555;--blue:#1f4e79;--line:#b7c5d2;--bg:#f6f8fb}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.25}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:10px;padding:12px;background:rgba(246,248,251,.95);border-bottom:1px solid #dce3ea}
+.toolbar a,.toolbar button{font:700 14px Arial;border:1px solid var(--blue);border-radius:8px;padding:9px 12px;background:#fff;color:var(--blue);text-decoration:none;cursor:pointer}
+.toolbar button{background:var(--blue);color:#fff}
+.resume{width:min(8.5in,calc(100% - 24px));margin:22px auto;background:#fff;padding:.42in .5in;box-shadow:0 12px 35px rgba(20,35,50,.08)}
+header{text-align:center}
+h1{font-size:26px;line-height:1;margin:0 0 6px;color:var(--blue);letter-spacing:.02em}
+.subtitle{font-size:15px;font-weight:700;margin:0 0 5px}
+.contact,.auth{font-size:14px;color:var(--muted);margin:0}
+.auth{color:var(--blue);font-weight:700;margin-top:4px}
+h2{font-size:16px;color:var(--blue);margin:10px 0 5px;padding-bottom:2px;border-bottom:1px solid var(--line)}
+h3{font-size:14px;margin:5px 0 1px}
+p,li{font-size:14px;margin-top:3px;margin-bottom:3px}
+ul{margin:3px 0 5px;padding-left:20px}
+li{margin-bottom:3px}
+.row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.row strong:first-child{min-width:0}
+.date{white-space:nowrap;color:var(--muted);font-weight:700}
+.meta{color:var(--muted);font-style:italic;margin-top:0}
+.label{font-weight:700}
+.page2{page-break-before:always}
+a{color:var(--blue)}
+@media(max-width:650px){
+ .resume{width:100%;margin:0;padding:20px 16px;box-shadow:none}
+ .toolbar{position:static;flex-wrap:wrap}
+ .row{display:block}
+ .date{display:block;margin-top:2px}
+ h1{font-size:24px}
+}
+@media print{
+ @page{size:Letter;margin:.4in .5in}
+ body{background:#fff;line-height:1.0}
+ .toolbar{display:none}
+ .resume{width:auto;margin:0;padding:0;box-shadow:none}
+ h1{font-size:20pt}
+ .subtitle,.contact,.auth,p,li,h3{font-size:11.3pt}
+ h2{font-size:13pt;margin:5pt 0 2pt}
+ p,li{margin-top:0;margin-bottom:1.5pt}
+ ul{margin:0 0 2pt;padding-left:15pt}
+ .subtitle{margin-bottom:0}
+ .contact,.auth{margin:0}
+ .resume{font-size:11.3pt}
+ 
+}
+</style>
 </head>
 <body>
-<header class="site-header">
-<div class="container navbar"><a class="brand" href="index.html">Sara Bakhtiari</a>
-<nav class="nav-links"><a href="index.html#research">Research</a><a href="index.html#publications">Publications</a><a href="index.html#resume">Résumé</a></nav>
-</div></header>
-<main class="container">
-<article class="resume-page">
-<div class="topline">
-<div><h1>Sara Bakhtiari</h1><p><strong>PhD Candidate in Mechanical Engineering | Scientific Machine Learning | Computational Modeling | Multimodal AI</strong></p>
-<p class="small">University of Kentucky · Lexington, KY · <a href="mailto:Sara.b@uky.edu">Sara.b@uky.edu</a> · <a href="https://github.com/Sarab23y">GitHub</a> · <a href="https://www.researchgate.net/profile/Sara-Bakhtiari-4?ev=hdr_xprf">ResearchGate</a></p></div>
-<div class="actions"><a class="button secondary" href="index.html">← Website</a><button class="button primary" onclick="window.print()">Print / Save PDF</button></div>
-</div>
-<h2>Professional Summary</h2><p>PhD candidate in Mechanical Engineering at the University of Kentucky working across scientific computing, computational biomechanics, and machine learning. Develops physics-based finite-element simulations and data-driven workflows, including vision-language-model embeddings, learned bottleneck representations, regression, repeatability analysis, and cross-validation. Experienced with Python, HPC, large scientific datasets, numerical modeling, and translating complex physical systems into robust computational pipelines.</p>
-<h2>Education</h2>
-<h3>University of Kentucky — Lexington, KY</h3>
-<p>PhD in Mechanical Engineering, Direct PhD Program · Spring 2024–Present<br>PhD Candidate since April 2026 · GPA: 3.91/4.00 · Advisor: Jonathan F. Wenk, PhD</p>
-<h3>Iran University of Science and Technology (IUST) — Tehran, Iran</h3>
-<p>B.Sc. in Mechanical Engineering · 2016–2021</p>
-<h2>Research Experience</h2>
-<h3>Graduate Research Assistant — Computational Cardiac Mechanics</h3>
-<p class="small">University of Kentucky · Spring 2024–Present</p>
-<ul><li>Develop large-scale finite-element cardiac simulations in Python/FEniCS that couple mechanics, active contraction, circulation, and spatial biological state variables.</li>
-<li>Design reproducible HPC workflows using MPI, PETSc, SLURM, structured simulation outputs, and automated post-processing for high-dimensional spatial/time-series data.</li>
-<li>Developed computational studies of constitutive uncertainty, fiber disarray, mechanical efficiency, and physiological compensation, integrating model outputs across local and organ scales.</li>
-<li>Currently coupling an agent-based fibrosis model with finite-element mechanics, creating a multiscale computational framework linking spatial biological evolution to tissue mechanics.</li></ul>
-<h3>Vision-Language Models & Machine Learning for Electrospinning</h3><ul><li>Applied pretrained and fine-tuned vision-language models to electrospinning videos and extracted high-dimensional hidden-state embeddings for downstream prediction.</li>
-<li>Developed learned low-dimensional bottleneck representations and compared them with full embeddings and randomly selected features.</li>
-<li>Designed repeated embedding-generation, feature-selection, and cross-validation studies to quantify representation variability and predictive robustness.</li>
-<li>Built regression pipelines for predicting electrospun fiber diameter from video-derived representations using Python and scikit-learn.</li></ul>
+<div class="toolbar"><a href="index.html#resume">← Website</a><button onclick="window.print()">Print / Save PDF</button></div>
+<article class="resume">
+<header>
+<h1>Sara Bakhtiari</h1>
+<p class="subtitle">PhD Candidate in Mechanical Engineering | Scientific Machine Learning | Computational Modeling | Multimodal AI</p>
+<p class="contact">Lexington, KY | <a href="mailto:Sara.b@uky.edu">Sara.b@uky.edu</a> | <a href="https://www.linkedin.com/in/sarah-bakhtiyari">LinkedIn</a> | <a href="https://github.com/Sarab23y">GitHub</a> | <a href="https://sarab23y.github.io">Website</a></p>
+<p class="auth">Eligible for U.S. internships through F-1 Curricular Practical Training (CPT), subject to university authorization.</p>
+</header>
 
+<h2>Professional Summary</h2><p>PhD candidate in Mechanical Engineering at the University of Kentucky working across scientific computing, computational biomechanics, and machine learning. Develops physics-based simulations and data-driven workflows using vision-language-model embeddings, learned bottlenecks, regression, repeatability analysis, and cross-validation, with experience in Python, HPC, numerical modeling, and large scientific datasets.</p>
+<h2>Education</h2>
+<div class="row"><h3>PhD, Mechanical Engineering (Direct PhD) - University of Kentucky</h3><span class="date">Spring 2024-Present</span></div><p>PhD Candidate since April 2026 | GPA: 3.91/4.00 | Advisor: Jonathan F. Wenk, PhD</p>
+<div class="row"><h3>B.Sc., Mechanical Engineering - Iran University of Science and Technology (IUST)</h3><span class="date">2016-2021</span></div>
+<h2>Research Experience</h2>
+<div class="row"><h3>Graduate Research Assistant - Computational Cardiac Mechanics</h3><span class="date">Spring 2024-Present</span></div><p class="meta">University of Kentucky - Lexington, KY</p>
+<ul><li>Develop large-scale finite-element cardiac simulations in Python/FEniCS that couple mechanics, active contraction, circulation, and spatial biological state variables.</li><li>Design reproducible HPC workflows using MPI, PETSc, SLURM, structured simulation outputs, and automated post-processing for high-dimensional spatial/time-series data.</li><li>Develop computational studies of constitutive uncertainty, fiber disarray, mechanical efficiency, and physiological compensation across local and organ scales.</li><li>Couple an agent-based fibrosis model with finite-element mechanics, creating a multiscale framework linking spatial biological evolution to tissue mechanics.</li></ul>
+<div class="row"><h3>Vision-Language Models & Machine Learning for Electrospinning</h3><span class="date">2026</span></div>
+<ul><li>Apply pretrained and fine-tuned vision-language models to electrospinning videos and extract high-dimensional hidden-state embeddings for downstream prediction.</li><li>Develop learned low-dimensional bottleneck representations and compare them with full embeddings and randomly selected features.</li><li>Design repeated embedding-generation, feature-selection, and cross-validation studies to quantify representation variability and predictive robustness.</li><li>Build regression pipelines for predicting electrospun fiber diameter from video-derived representations using Python and scikit-learn.</li></ul>
+<div class="page2"></div>
+<h2>Selected Research Projects</h2>
+<p><span class="label">Physics-Based Cardiac Simulation:</span> Develop nonlinear finite-element models coupling mechanics, active contraction, circulation, and spatial biological variables.</p>
+<p><span class="label">Multiscale Fibrosis Modeling:</span> Link agent-based spatial fibrosis evolution to finite-element tissue mechanics within a coupled computational framework.</p>
+<p><span class="label">Scientific Data Pipelines:</span> Automate post-processing and analysis of high-dimensional spatial and time-series simulation outputs using Python and HPC workflows.</p>
 <h2>Publications & Research Outputs</h2>
 <p><strong>Islam, R., Bakhtiari, S., Anugrah, G. G., Mehri, M., & Wenk, J. F.</strong> “Advancements in finite element modeling of myocardial infarction: a review.” <em>Biomechanics and Modeling in Mechanobiology</em>, 25(4), 2026. DOI: 10.1007/s10237-026-02107-0</p>
-<p><strong>Bakhtiari, S., Mehri, M., & Wenk, J. F.</strong> “Choice of Passive Myocardial Constitutive Law Drives Divergent Predictions of Left Ventricular Remodeling in Volume-Overload Conditions.” <em>Manuscript under review.</em></p>
-<p><strong>Bakhtiari, S., Mehri, M., & Wenk, J. F.</strong> “Effect of Myocardial Fiber Disarray on Left Ventricular Mechanical Efficiency and Baroreflex Compensation.” <em>Manuscript under review.</em></p>
+<p><strong>Bakhtiari, S., Mehri, M., & Wenk, J. F.</strong> “Choice of Passive Myocardial Constitutive Law Drives Divergent Predictions of Left Ventricular Remodeling in Volume-Overload Conditions.” Manuscript under review.</p>
+<p><strong>Bakhtiari, S., Mehri, M., & Wenk, J. F.</strong> “Effect of Myocardial Fiber Disarray on Left Ventricular Mechanical Efficiency and Baroreflex Compensation.” Manuscript under review.</p>
 <p><strong>Selected presentation:</strong> “Choice of Passive Myocardial Constitutive Law Drives Differences in LV Mechanics and Growth Under Disease Conditions.” Poster, BMES Annual Meeting, San Diego, CA, October 2025.</p>
-
 <h2>Teaching Experience</h2>
-<p><strong>Teaching Assistant — Statics, University of Kentucky</strong> · Fall 2026<br>Supported undergraduate instruction and problem solving in equilibrium, force/moment analysis, trusses, and frames.</p>
-<p><strong>Teaching Assistant — Statics, Iran University of Science and Technology</strong> · 2021</p>
+<div class="row"><h3>Teaching Assistant - Statics, University of Kentucky</h3><span class="date">Fall 2026</span></div>
+<ul><li>Solved and explained undergraduate statics problems involving equilibrium equations, free-body diagrams, force/moment analysis, trusses, frames, and systematic engineering problem-solving methods.</li><li>Supported classroom instruction, student questions, engagement, and class management; communicated technical concepts to students with different levels of understanding.</li><li>Assisted with grading and examination supervision, evaluating engineering solution approaches and maintaining consistent exam procedures.</li></ul>
+<div class="row"><h3>Teaching Assistant - Statics, Iran University of Science and Technology</h3><span class="date">2021</span></div><ul><li>Supported undergraduate engineering-mechanics problem solving and helped students strengthen core statics concepts.</li></ul>
 <h2>Technical Skills</h2>
-<p><strong>Machine Learning:</strong> scikit-learn, regression, cross-validation, feature selection, embeddings, dimensionality reduction, learned bottlenecks, vision-language models</p>
-<p><strong>Programming & Data:</strong> Python, NumPy, SciPy, Pandas, MATLAB, structured scientific data processing</p>
-<p><strong>Scientific Computing:</strong> FEniCS/DOLFIN, UFL, nonlinear numerical simulation, model validation</p>
-<p><strong>HPC:</strong> MPI, mpi4py, PETSc, SLURM, Linux, distributed workflows, Singularity/container environments</p>
-<p><strong>Domain Modeling:</strong> Computational biomechanics, cardiovascular mechanics, constitutive modeling, multiscale fibrosis modeling</p>
-</article></main>
-<footer><div class="container footer-row"><div>© 2026 Sara Bakhtiari</div><div><a href="index.html">Back to research website</a></div></div></footer>
+<p><span class="label">Machine Learning:</span> scikit-learn, regression, cross-validation, feature selection, embeddings, dimensionality reduction, learned bottlenecks, vision-language models</p>
+<p><span class="label">Programming & Data:</span> Python, NumPy, SciPy, Pandas, MATLAB, structured scientific data processing</p>
+<p><span class="label">Scientific Computing & HPC:</span> FEniCS/DOLFIN, UFL, nonlinear simulation, MPI, mpi4py, PETSc, SLURM, Linux, Singularity</p>
+<p><span class="label">Domain Modeling:</span> Computational biomechanics, cardiovascular mechanics, constitutive modeling, multiscale fibrosis modeling</p>
+</article>
 </body></html>
