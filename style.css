@@ -127,3 +127,14 @@ footer { border-top: 1px solid var(--line); margin-top: 34px; padding: 30px 0 42
 .study-visual .figure-card{margin-top:14px}
 .passive-figure img{width:100%;height:auto;display:block;background:#fff}
 .study-visual>p{max-width:900px}
+
+.availability{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.availability strong{color:var(--accent);font-size:1.05rem}
+.availability span{color:var(--ink)}
+.teaching-list{margin:10px 0 0;padding-left:1.2rem}
+.teaching-list li{margin:0 0 8px;color:var(--muted)}
+@media (max-width:560px){
+  .availability{align-items:flex-start;flex-direction:column;gap:3px}
+  .hero-actions .button{width:100%}
+  .resume-card p{min-height:0}
+}
