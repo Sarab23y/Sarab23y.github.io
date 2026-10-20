@@ -1,0 +1,70 @@
+name: Materialize CV files
+
+on:
+  push:
+    paths:
+      - '.github/workflows/materialize-cv-files.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Reconstruct edited Word files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat assets/cv-docx/part*.b64 > /tmp/docx_bundle.b64
+          base64 -d /tmp/docx_bundle.b64 > /tmp/docx_bundle.tar.gz
+          mkdir -p /tmp/cv
+          tar -xzf /tmp/docx_bundle.tar.gz -C /tmp/cv
+          test -f /tmp/cv/Sara_Bakhtiari_Resume.docx
+          test -f /tmp/cv/Sara_Bakhtiari_Resume_Computational_Mechanics.docx
+          test -f /tmp/cv/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx
+          test -f /tmp/cv/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx
+          mkdir -p Archive
+          cp /tmp/cv/Sara_Bakhtiari_Resume.docx .
+          cp /tmp/cv/Sara_Bakhtiari_Resume_Computational_Mechanics.docx Archive/
+          cp /tmp/cv/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx Archive/
+          cp /tmp/cv/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx Archive/
+
+      - name: Install LibreOffice
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice
+
+      - name: Export matching PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pdf
+          libreoffice --headless --convert-to pdf --outdir /tmp/pdf Sara_Bakhtiari_Resume.docx
+          libreoffice --headless --convert-to pdf --outdir /tmp/pdf Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.docx
+          libreoffice --headless --convert-to pdf --outdir /tmp/pdf Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx
+          libreoffice --headless --convert-to pdf --outdir /tmp/pdf Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx
+          cp /tmp/pdf/Sara_Bakhtiari_Resume.pdf .
+          cp /tmp/pdf/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf Archive/
+          cp /tmp/pdf/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf Archive/
+          cp /tmp/pdf/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf Archive/
+          pdfinfo Sara_Bakhtiari_Resume.pdf | grep '^Pages:'
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf | grep '^Pages:'
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf | grep '^Pages:'
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf | grep '^Pages:'
+
+      - name: Publish files
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf assets/cv-docx
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish manually edited CV Word and PDF files" || exit 0
+          git push
