@@ -17,25 +17,51 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reconstruct CV files
+      - name: Reconstruct Word files
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p Archive
 
           cat .publish_cv_chunks/Sara_Bakhtiari_Resume.docx.part*.b64 | tr -d '\n\r ' | base64 --decode > Sara_Bakhtiari_Resume.docx
-          cat .publish_cv_chunks/Sara_Bakhtiari_Resume.pdf.part*.b64 | tr -d '\n\r ' | base64 --decode > Sara_Bakhtiari_Resume.pdf
-
           cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Computational_Mechanics.docx.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.docx
-          cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf
-
           cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx
-          cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf
-
           cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx
-          cat .publish_cv_chunks/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf.part*.b64 | tr -d '\n\r ' | base64 --decode > Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf
 
+          unzip -t Sara_Bakhtiari_Resume.docx
+          unzip -t Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.docx
+          unzip -t Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx
+          unzip -t Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx
+
+      - name: Generate PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if ! command -v soffice >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y libreoffice-writer poppler-utils
+          fi
+          if ! command -v pdfinfo >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y poppler-utils
+          fi
+
+          mkdir -p /tmp/cvpdf
+          soffice --headless --convert-to pdf --outdir /tmp/cvpdf Sara_Bakhtiari_Resume.docx
+          soffice --headless --convert-to pdf --outdir /tmp/cvpdf Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.docx
+          soffice --headless --convert-to pdf --outdir /tmp/cvpdf Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx
+          soffice --headless --convert-to pdf --outdir /tmp/cvpdf Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx
+
+          cp /tmp/cvpdf/Sara_Bakhtiari_Resume.pdf Sara_Bakhtiari_Resume.pdf
           cp Sara_Bakhtiari_Resume.pdf Sara_Bakhtiari_One_Page_Resume.pdf
+          cp /tmp/cvpdf/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf Archive/
+          cp /tmp/cvpdf/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf Archive/
+          cp /tmp/cvpdf/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf Archive/
+
+          pdfinfo Sara_Bakhtiari_Resume.pdf | grep Pages
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf | grep Pages
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf | grep Pages
+          pdfinfo Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf | grep Pages
 
       - name: Commit published files
         shell: bash
@@ -43,10 +69,12 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add Sara_Bakhtiari_Resume.docx Sara_Bakhtiari_Resume.pdf Sara_Bakhtiari_One_Page_Resume.pdf
           git add Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.docx Archive/Sara_Bakhtiari_Resume_Computational_Mechanics.pdf
           git add Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.docx Archive/Sara_Bakhtiari_Resume_Medical_Device_Cardiovascular_RD.pdf
           git add Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.docx Archive/Sara_Bakhtiari_Resume_Scientific_ML_AI.pdf
           git rm -r .publish_cv_chunks
+
           git commit -m "Publish manually edited CV files in Word and PDF"
           git push
