@@ -68,3 +68,5 @@ jobs:
           git add -A
           git commit -m "Publish manually edited CV Word and PDF files" || exit 0
           git push
+
+# retry after bundle repair
