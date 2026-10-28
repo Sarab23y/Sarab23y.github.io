@@ -100,7 +100,7 @@ section { padding: 42px 0; }
 .item .meta { color: var(--accent); font-weight: 700; font-size: 0.92rem; margin-bottom: 4px; }
 .item h3 { margin: 0 0 6px; font-size: 1.04rem; color: var(--navy); }
 .item p { margin: 0; color: var(--muted); }
-.resume-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+.resume-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
 .resume-card {
   background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px;
 }
@@ -138,3 +138,7 @@ footer { border-top: 1px solid var(--line); margin-top: 34px; padding: 30px 0 42
   .hero-actions .button{width:100%}
   .resume-card p{min-height:0}
 }
+
+.download-links { display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; }
+.download-links .button { padding:8px 14px; font-size:0.92rem; }
+.resume-card .download-links + * { margin-top:10px; }
